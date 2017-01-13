@@ -108,57 +108,57 @@ public class Battleship {
 		    }
 		}
 		else {
-		System.out.println("God Damn it you moron you shot there already, try again dipshit");
+		System.out.println("Stop beating a dead horse. It's time to move on.");
 		}
 	    }
 	    else{
-		System.out.println("Hey Dumbass, it's a 10x10 grid. try again");
+		System.out.println("It's a 10x10 grid. You fell off the universe. Try Again");
 	    }
 	    }
     }
     public static void userscreen() {
-	System.out.println("___HITMAP___");
-	System.out.println("|----------|");
+	System.out.println("~~~~~~~~~~~~~HITMAP~~~~~~~~~~~~~");
+	System.out.println("|------------------------------|");
 	String curline;
 	for(int i = 0; i < 10; i++) {
 	    curline = "|";
 	    for(int j = 0; j < 10; j++) {
 	        if(hitmap[i][j]) {
-		    curline += "1";
+		    curline += " 1 ";
 		}
 		else {
-		    curline += "0";
+		    curline += " 0 ";
 		}
 	    }
 	    curline += "|";
 	    System.out.println(curline);
 	}
-	System.out.println("|----------|");
-		System.out.println("__YOUR_MAP__");
-	System.out.println("|----------|");
+	System.out.println("|------------------------------|");
+		System.out.println("\n~~~~~~~~~~~~YOUR MAP~~~~~~~~~~~~");
+	System.out.println("|------------------------------|");
 	for(int i = 0; i < 10; i++) {
 	    curline = "|";
 	    for(int j = 0; j < 10; j++) {
 	        if(map[i][j]) {
-		    curline += "1";
+		    curline += " 1 ";
 		}
 		else {
-		    curline += "0";
+		    curline += " 0 ";
 		}
 	    }
 	    curline += "|";
 	    System.out.println(curline);
 	}
-	System.out.println("|----------|");
+	System.out.println("|------------------------------|");
 	
 	    
     }
     public static void main(String[] args) {
-	System.out.println(Arrays.deepToString(map));
-	System.out.println(Arrays.deepToString(enemymap));
+	//System.out.println(Arrays.deepToString(map));
+	//System.out.println(Arrays.deepToString(enemymap));
 	Startup();
-       	System.out.println(Arrays.deepToString(map));
-	System.out.println(Arrays.deepToString(enemymap));
+       	//System.out.println(Arrays.deepToString(map));
+	//System.out.println(Arrays.deepToString(enemymap));
 	userscreen();
     }
 

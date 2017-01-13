@@ -7,17 +7,6 @@ pd 4
 Trapped Instuyde
 
 
-devlog--
-Use keyboard shortcut to jump to end,
- replicate entry template,
- modify appropriately.
-
-zone of reflection--
-Flesh out each category whenever necessary, appropriate.
- Need not be fully filled in until end of project,
- but best done as you go along.
-
-
 /////////// Zone of Reflection \\\\\\\\\\\
 ------------------------------------------
 OBSTACLES OVERCOME
@@ -26,8 +15,6 @@ wow we so BOSS bc...
 
 UNRESOLVED ISSUES
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
-blah blah pesky bug...
-maybe some of these will move into the Obs.Ovrcm section...
 
 COOL STUFF LEARNED
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
@@ -56,11 +43,9 @@ tales of wisdom gained...
 2017-01-12
 --------------------------------------------------------------
 Eric :: Made Location.java, Worked on Player.java
-<Member> :: <Thing member did.>
-<Member> :: <Thing member did.>
+Kevin :: Updated Woo.java to deliverable specifications, with basic Battleship.java functionality included
+Dima :: Started Battleship.java
 ==============================================================
-
-
 
 
 yyyy-mm-dd

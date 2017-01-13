@@ -1,10 +1,16 @@
 Anything is Puzzleble - Eric, Dima, Kevin
 Period 4
 
-Todo list:
+Todo list (to be expanded as tasks are discovered/known in more detail):
 
 1. Get battleship running
+  a. Be able to ask for user input
+  b. display a clear board
+  c. meet deliverable specifications
 2. Create user character class
-3. Create map and movement.
-4. Finalize puzzles
-5. Add puzzles and locations
+3. Create location.java
+  a. implement random broken escalators functionality
+  b. have a room number that cooresponds to each location of puzzle.
+4. Create map and movement.
+5. Finalize puzzles
+6. Add puzzles and locations

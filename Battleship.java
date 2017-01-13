@@ -116,12 +116,50 @@ public class Battleship {
 	    }
 	    }
     }
+    public static void userscreen() {
+	System.out.println("___HITMAP___");
+	System.out.println("|----------|");
+	String curline;
+	for(int i = 0; i < 10; i++) {
+	    curline = "|";
+	    for(int j = 0; j < 10; j++) {
+	        if(hitmap[i][j]) {
+		    curline += "1";
+		}
+		else {
+		    curline += "0";
+		}
+	    }
+	    curline += "|";
+	    System.out.println(curline);
+	}
+	System.out.println("|----------|");
+		System.out.println("__YOUR_MAP__");
+	System.out.println("|----------|");
+	for(int i = 0; i < 10; i++) {
+	    curline = "|";
+	    for(int j = 0; j < 10; j++) {
+	        if(map[i][j]) {
+		    curline += "1";
+		}
+		else {
+		    curline += "0";
+		}
+	    }
+	    curline += "|";
+	    System.out.println(curline);
+	}
+	System.out.println("|----------|");
+	
+	    
+    }
     public static void main(String[] args) {
 	System.out.println(Arrays.deepToString(map));
 	System.out.println(Arrays.deepToString(enemymap));
 	Startup();
        	System.out.println(Arrays.deepToString(map));
 	System.out.println(Arrays.deepToString(enemymap));
+	userscreen();
     }
 
 }

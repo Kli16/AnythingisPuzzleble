@@ -48,7 +48,7 @@ public class Battleship {
 	System.out.println("Direction? (Horizontal or Vertical): ");
 	boolean orient;
 	orient = "horizontal".equals(Keyboard.readString().toLowerCase());
-	System.out.println("Topmost coordinate? (1-10): ");
+	System.out.println("Bottom-most coordinate? (1-10): ");
 	int x = Keyboard.readInt();
 	System.out.println("Leftmost coordinate? (1-10): ");
 	int y = Keyboard.readInt();
@@ -115,7 +115,7 @@ public class Battleship {
 	for(int i = 0; i < 10; i++) {
 	    curline = "|";
 	    for(int j = 0; j < 10; j++) {
-	        if(hitmap[i][j]) {
+	        if(hitmap[map.length - 1 - i][j]) {
 		    curline += " 1 ";
 		}
 		else {
@@ -131,7 +131,7 @@ public class Battleship {
 	for(int i = 0; i < 10; i++) {
 	    curline = "|";
 	    for(int j = 0; j < 10; j++) {
-	        if(map[i][j]) {
+	        if(map[map.length - 1 - i][j]) {
 		    curline += " 1 ";
 		}
 		else {

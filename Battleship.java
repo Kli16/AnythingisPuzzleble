@@ -1,3 +1,4 @@
+import cs1.Keyboard;
 import java.util.Arrays;
 
 public class Battleship {
@@ -8,35 +9,17 @@ public class Battleship {
     static int extraship;
 
     public static void Startup () {
-	int x, y;
-        boolean orient;
-	orient = "vertical".equals("vertical"/*User inputs wanted orientation*/);
-	x = 2 /* User inputs leftmost coord*/;
-	y = 3 /* User inputs bottommost cord*/;
-	Place(orient, x, y, 2);
-       	orient = "vertical".equals("swag"/*User inputs wanted orientation*/);
-	x = 5/* User inputs leftmost coord*/;
-	y = 6/* User inputs bottommost cord*/;
-	Place(orient, x, y, 3);
-       	orient = "vertical".equals("vertical"/*User inputs wanted orientation*/);
-	x = 6/* User inputs leftmost coord*/;
-	y = 3/* User inputs bottommost cord*/;
-	Place(orient, x, y, 3);
-       	orient = "vertical".equals("deeznuts"/*User inputs wanted orientation*/);
-	x = 7/* User inputs leftmost coord*/;
-	y = 2/* User inputs bottommost cord*/;
-	Place(orient, x, y, 4);
-       	orient = "vertical".equals("vertical"/*User inputs wanted orientation*/);
-	x =  3/* User inputs leftmost coord*/;
-	y =  4/* User inputs bottommost cord*/;
-	Place(orient, x, y, 5);
-       	orient = "vertical".equals("Stressed? Nah Boi"/*User inputs wanted orientation*/);
-	x = 1/* User inputs leftmost coord*/;
-	y = 1/* User inputs bottommost cord*/;
-	Place(orient, x, y, extraship);
+	Place(2);
+	Place(3);
+	Place(3);
+	Place(4);
+	Place(5);
+	Place(extraship);
 
 	
 	//Make the comp randomly choose positions on their map
+	boolean orient;
+	int x,y;
        	orient = 1 == ((int) (2 * Math.random()));
        	x = (int) (8 * Math.random());
 	y = (int) (8 * Math.random());
@@ -60,7 +43,15 @@ public class Battleship {
 
 	//Later make an if statement so that it chooses x or y to limit
 }
-    public static void Place(boolean orient,int x,int y, int size) {
+    public static void Place(int size) {
+	System.out.println("Placing the ship with size "+size);
+	System.out.println("Direction? (Horizontal or Vertical): ");
+	boolean orient;
+	orient = "horizontal".equals(Keyboard.readString().toLowerCase());
+	System.out.println("Topmost coordinate? (1-10): ");
+	int x = Keyboard.readInt();
+	System.out.println("Leftmost coordinate? (1-10): ");
+	int y = Keyboard.readInt();
 	if (orient) {
 	    for(int i = 0; i < size; i++) {
 		map[x - 1][y - 1 + i] = true;
@@ -73,6 +64,7 @@ public class Battleship {
 		//^^look up^^
 	    }
 	}
+	userscreen();
     }
     public static void EnemyPlace(boolean orient,int x,int y, int size) {
 	if (orient) {
@@ -93,8 +85,8 @@ public class Battleship {
 	int x;
 	int y;
         while(0 == 0) {
-	    x = 4 /*User Input Here*/;
-	    y = 5 /*User Input Here*/;
+	    x = Keyboard.readInt();
+	    y = Keyboard.readInt();
 	    if(x > 0 && x < 11 && y > 0 && y < 11) {
 		if(!(hitmap[x - 1][y - 1])) {
 		    hitmap[x - 1][y - 1] = true;

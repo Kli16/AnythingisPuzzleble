@@ -8,9 +8,24 @@ Todo list (to be expanded as tasks are discovered/known in more detail):
   b. display a clear board
   c. meet deliverable specifications
 2. Create user character class
-3. Create location.java
-  a. implement random broken escalators functionality
-  b. have a room number that cooresponds to each location of puzzle.
+3̶.̶ ̶C̶r̶e̶a̶t̶e̶ ̶l̶o̶c̶a̶t̶i̶o̶n̶.̶j̶a̶v̶a̶ ̶ ̶ ̶ 
+  a̶.̶ ̶i̶m̶p̶l̶e̶m̶e̶n̶t̶ ̶r̶a̶n̶d̶o̶m̶ ̶b̶r̶o̶k̶e̶n̶ ̶e̶s̶c̶a̶l̶a̶t̶o̶r̶s̶ ̶f̶u̶n̶c̶t̶i̶o̶n̶a̶l̶i̶t̶y̶ ̶ ̶ ̶
+  b̶.̶ ̶h̶a̶v̶e̶ ̶a̶ ̶r̶o̶o̶m̶ ̶n̶u̶m̶b̶e̶r̶ ̶t̶h̶a̶t̶ ̶c̶o̶o̶r̶e̶s̶p̶o̶n̶d̶s̶ ̶t̶o̶ ̶e̶a̶c̶h̶ ̶l̶o̶c̶a̶t̶i̶o̶n̶ ̶o̶f̶ ̶p̶u̶z̶z̶l̶e̶.̶
+3. LOCATIONS
+  Art: grid puzzle
+  Drafting: Laugh at Mr. Flothenberg's jokes
+  Chemistry Lab: Choose the nontoxic chemical
+  Bathroom 8th: Don't flush the illegal substance
+  Bio Class: 
+  Speech and Debate: Arguing, Ethics test
+  English: assigned reading, The Hobbit
+  Library: Look for the hobbit
+  PE:
+  Bathroom 5th: 
+  Cafeteria: choose between options of food, lose or gain energy based on nutrition
+  Mr. Cocoros: star wars based math problem
+  Volleyball: role playing volleyball game  
+  SU:
 4. Create map and movement.
 5. Finalize puzzles
 6. Add puzzles and locations

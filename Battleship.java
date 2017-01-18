@@ -178,6 +178,21 @@ public class Battleship {
 	return true;
 	//later make it figure out who won and print a statement
     }
+
+    public void Play() {
+	//System.out.println(Arrays.deepToString(map));
+	//System.out.println(Arrays.deepToString(enemymap));
+	Startup();
+       	//System.out.println(Arrays.deepToString(map));
+	//System.out.println(Arrays.deepToString(enemymap));
+	userscreen();
+	while (! gameisover()) {
+	    userscreen();
+	    hit();
+	    enemyhit();
+	}
+    }
+    
     public static void main(String[] args) {
 	//System.out.println(Arrays.deepToString(map));
 	//System.out.println(Arrays.deepToString(enemymap));

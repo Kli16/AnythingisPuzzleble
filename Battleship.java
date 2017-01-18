@@ -7,6 +7,11 @@ public class Battleship {
     static boolean[][] map = new boolean[10][10];
     static boolean[][] enemyhitmap = new boolean [10][10];
     static int extraship;
+    static String[] enemypatrol, patrol = new String[2];
+    static String[] enemydestroyer,destroyer,submarine,enemysubmarine = new String[3];
+    static String[] enemybattleship,battleship = new String[4];
+    static String[] enemycarrier,carrier = new String[5];
+    
 
     public static void Startup () {
 	Place(2);
@@ -108,6 +113,19 @@ public class Battleship {
 	    }
 	    }
     }
+    public static void enemyhit() {
+	int x = (int)(Math.random() * 10);
+	int y = (int)(Math.random() * 10);
+	if(map[x][y]) {
+	    System.out.println("Mr.Brown got a hit on (" + (10 - x) + "," + (10 - y) + "), tough luck...");
+	    map[x][y] = false;
+	}
+	else {
+	    System.out.println("MR.BROWN MISSED!!");
+	}
+    }
+	    
+	
     public static void userscreen() {
 	System.out.println("~~~~~~~~~~~~~HITMAP~~~~~~~~~~~~~");
 	System.out.println("|------------------------------|");
@@ -145,6 +163,21 @@ public class Battleship {
 	
 	    
     }
+
+    public static boolean gameisover() {
+	for(int i = 0; i < 10; i++) {
+	    for(int j = 0; j < 10; j++) {
+		if(map[i][j]) {
+		    return false;
+		}
+		if(enemymap[i][j]){
+		    return false;
+		}
+	    }
+	}
+	return true;
+	//later make it figure out who won and print a statement
+    }
     public static void main(String[] args) {
 	//System.out.println(Arrays.deepToString(map));
 	//System.out.println(Arrays.deepToString(enemymap));
@@ -152,6 +185,11 @@ public class Battleship {
        	//System.out.println(Arrays.deepToString(map));
 	//System.out.println(Arrays.deepToString(enemymap));
 	userscreen();
+	while (! gameisover()) {
+	    userscreen();
+	    hit();
+	    enemyhit();
+	}
     }
 
 }

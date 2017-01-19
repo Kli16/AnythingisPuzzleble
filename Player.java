@@ -17,7 +17,7 @@ public class Player{
 	mapnames = new String[10][3];
 	mapstatus = new boolean[10][3];
 	location = new Activity[10][3];
-	location = [[], [SUPuzzle, Battleship], [Volleyball], [Cocoros], [Bathroom5, Cafeteria,], [SpeechAndDebate, EngPuzzle, Library, PE], [Bathroom6, Bio], [Bathroom7, PhysicsLab], [ChemLab], [Drafting, ArtPuzzle]];
+	location = [[], [SUPuzzle, Battleship], [Volleyball], [StarWars], [Bathroom5, Cafeteria,], [SpeechAndDebate, EngPuzzle, Library, PE], [Bathroom6, Bio], [Bathroom7, PhysicsLab], [ChemLab], [Drafting, ArtPuzzle]];
     }
 
     public Player(String given) {

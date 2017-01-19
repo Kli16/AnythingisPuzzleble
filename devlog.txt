@@ -39,12 +39,38 @@ tales of wisdom gained...
    \:\/.:| |\:\____/\\ ..::/ / \:\/___/\\:\_\ \ \\:\_\ \ \ 
     \____/_/ \_____\/ \___/_(   \_____\/ \_____\/ \_____\/ 
 ==============================================================
+2017-01-18
+--------------------------------------------------------------
+Kevin :: New locations added, battleship updated
+Eric ::  :: <Thing member did.>
+<Member> :: <Thing member did.>
+==============================================================
+
+
+2017-01-17
+--------------------------------------------------------------
+Dima :: Battleship made playable
+Kevin :: Launch instructions added, updated todo
+Eric :: Started Art Puzzle
+==============================================================
+
+2017-01-16
+--------------------------------------------------------------
+Dima :: Removed Location.java, system made more concise, made Battleship 
+        output screen better.
+==============================================================
+
+2017-01-15
+--------------------------------------------------------------
+Eric :: Updated Battleship.java for user input
+Dima :: Created puzzle for English
+==============================================================
 
 2017-01-12
 --------------------------------------------------------------
 Eric :: Made Location.java, Worked on Player.java
 Kevin :: Updated Woo.java to deliverable specifications, with basic Battleship.java functionality included
-Dima :: Started Battleship.java
+Dima :: MVP of Battleship
 ==============================================================
 
 

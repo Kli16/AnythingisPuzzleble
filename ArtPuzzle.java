@@ -125,12 +125,20 @@ public class ArtPuzzle extends Activity{
     
     public void Play(Player name) {
 	printGrid();
-	System.out.println("Input a direction to slide a piece (up, down, left, right)");
+	System.out.println("Input a direction to slide a piece (up, down, left, right). To quit, enter \"quit\".");
+	String input;
 	while (!(Grid.equals(originalGrid))) {
-	    move(Keyboard.readString());
+	    printGrid();
+	    input = Keyboard.readString();
+	    if (input.toLowerCase().equals("quit")) {
+		name.energy += 5;
+		return;
+	    }
+	    move(input);
 	    totalMoves += 1;
 	}
-	name.energy += totalMoves/5;
+	name.kts += 1;
+	name.energy += 5;
     }
 
 

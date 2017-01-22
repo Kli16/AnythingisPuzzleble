@@ -1,17 +1,20 @@
 import cs1.Keyboard;
 
-public class ArtPuzzle extends Activity{
-    String[][]Grid;
+public class ArtPuzzle{
+    String[][] Grid, originalGrid;
     int totalMoves;
 
     public ArtPuzzle(){
+	String[][] originalGrid = {{"01","02","03"},
+		{"04","05","06"},
+		{"07","08","  "}};
 	String[][] Grid = {{"01","02","03"},
 		{"04","05","06"},
 		{"07","08","  "}};
 	int totalMoves = 0;
     }
 
-    public void moveHorizontal(String direction) {
+    public String moveHorizontal(String direction) {
 	//find empty row
 	int rowNumber = 0;
 	for (int row = 1; row < Grid.length; row++) {
@@ -31,21 +34,22 @@ public class ArtPuzzle extends Activity{
 	}
 	if (direction.toLowerCase().equals("left")) {
 	    if (emptyIndex == 2) {
-		System.out.println("Invalid movement");
+		return "Invalid movement";
 	    }
 	    Grid[rowNumber][emptyIndex] = Grid[rowNumber][emptyIndex+1];
 	    Grid[rowNumber][emptyIndex+1] = "  ";
 	}
 	else {
 	    if (emptyIndex == 0) {
-		System.out.println("Invalid movement");
+		return "Invalid movement";
 	    }
 	    Grid[rowNumber][emptyIndex] = Grid[rowNumber][emptyIndex-1];
 	    Grid[rowNumber][emptyIndex-1] = "  ";
 	}
+	return "";
     }
 
-    public void moveVertical(String direction) {
+    public String moveVertical(String direction) {
 	//find empty column
 	int colNumber = 0;
 	for (int col = 1; col < Grid[0].length; col++) {
@@ -68,18 +72,19 @@ public class ArtPuzzle extends Activity{
 	//move accordingly
 	if (direction.toLowerCase().equals("up")) {
 	    if (emptyIndex == 2) {
-		System.out.println("Invalid movement");
+		return "Invalid movement";
 	    }
 	    Grid[emptyIndex][colNumber] = Grid[emptyIndex+1][colNumber];
 	    Grid[emptyIndex+1][colNumber] = "  ";
 	}
 	else {
 	    if (emptyIndex == 0) {
-		System.out.println("Invalid movement");
+		return "Invalid movement";
 	    }
 	    Grid[emptyIndex][colNumber] = Grid[emptyIndex-1][colNumber];
 	    Grid[emptyIndex-1][colNumber] = "  ";
 	}
+	return "";
     }
 
     public void move(String direction) {
@@ -102,17 +107,40 @@ public class ArtPuzzle extends Activity{
 
     public void scramble() {
 	String[] choices = {"up","down","left","right"};
+	int randChoice;
 	for (int reps = 0; reps < 20; reps++) {
-	    move(choices[(int)(4*Math.random())]);
+	    randChoice = (int) (4*Math.random());
+	    move(choices[randChoice]);
 	}
     }
 
-
+    public void printGrid() {
+	for (String[] row: Grid) {
+	    for (String num: row) {
+		System.out.print(num+" ");
+	    }
+	    System.out.println("");
+	}
+    }
+    
     public void Play(Player name) {
+	printGrid();
+	System.out.println("Input a direction to slide a piece (up, down, left, right)");
+	while (!(Grid.equals(originalGrid))) {
+	    move(Keyboard.readString());
+	    totalMoves += 1;
+	}
+	name.energy += totalMoves/5;
     }
 
 
-
+    /*
     public static void main(String[] args) {
-    }
+        String[][] Grid = {{"01","02","03"},
+		{"04","05","06"},
+		{"07","08","  "}};
+	printGrid(Grid);
+	scramble(Grid);
+	printGrid(Grid);
+	}*/
 }

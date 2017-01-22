@@ -1,6 +1,6 @@
 import cs1.Keyboard;
 
-public class ArtPuzzle{
+public class ArtPuzzle extends Activity{
     String[][] Grid, originalGrid;
     int totalMoves;
 

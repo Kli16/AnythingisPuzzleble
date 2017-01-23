@@ -17,9 +17,10 @@ Till now none of us have ever written a project with so many files in it
 UNRESOLVED ISSUES
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 Would have wanted to make Battleship more and made the AI smarter
+
 COOL STUFF LEARNED
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
-wow! oo!...
+We used more creative ways of writing puzzles using arrays, which was helping in understanding the concepts, and just super cool as a tool in itself.
 
 MID-DEVELOPMENT DESIGN CHANGES
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
@@ -28,7 +29,8 @@ Changed the function of Keys to Success, mainly due to time restraint
 
 LESSONS LEARNED
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
-Quality and Polish and Robustness should always go above quantity, especially under a tight time limit
+Quality and Polish and Robustness should always go above quantity, especially under a tight time limit.
+Good communication makes the project a lot more efficient and organized.
 
 
 

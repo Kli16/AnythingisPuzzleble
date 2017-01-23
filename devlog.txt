@@ -42,7 +42,7 @@ tales of wisdom gained...
 2017-01-22
 --------------------------------------------------------------
 Kevin :: 
-Eric :: Finished ArtPuzzle, Finished ChemLab, Updated other puzzles to current specifications
+Eric :: Finished ArtPuzzle, Finished ChemLab, Updated other puzzles to current specifications, Fixed Player.java, Finished StarWars
 <Member> :: <Thing member did.>
 ==============================================================
 

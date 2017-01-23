@@ -4,15 +4,16 @@ public class Library extends Activity{
 
     int tries;
     
-    public int Play(Player p){
+    public void Play(Player p){
 	boolean win = Game();
 	if(win) {
 	    System.out.println("You find the Hobbit in place 3101 of all of the books, a certain line catches your eye, 'What have I got in my pocket?' which was said by Bilbo to during his riddle battle with Gollum, having the one ring in his pocket");
+	    
 	}
 	else {
 	    System.out.println("You leave the library Hobbitless and a little weaker than when you came in");
 	}
-	return tries;
+	p.energy += tries;
     }
     public boolean Game() {
 	System.out.println("You find yourself in the renouned Stuyvesant library. You remember that you have assigned reading for english class for The Hobbit by J.R.R Tolkien, you need to find a copy of it in the library but you can't waste too much energy: try to find it with as little tries as possible, all of the books are in order of last name and there are 10000 books/n");

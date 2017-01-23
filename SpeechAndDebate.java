@@ -116,6 +116,7 @@ public class SpeechAndDebate extends Activity {
 	else {
 	    System.out.println("agh. You got a " + points + " out of 4. Better luck next time. Maybe you just need more practice.");
 	}
+	p.energy += 5;
     }
 
     public static void main (String[] args){

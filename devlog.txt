@@ -73,10 +73,70 @@ Kevin :: Updated Woo.java to deliverable specifications, with basic Battleship.j
 Dima :: MVP of Battleship
 ==============================================================
 
+2017-01-13
+--------------------------------------------------------------
+Kevin :: worked on planning and organizing how all the puzzles could be called from one program
+<Member> :: <Thing member did.>
+<Member> :: <Thing member did.>
+==============================================================
 
-yyyy-mm-dd
+2017-01-14
 --------------------------------------------------------------
 <Member> :: <Thing member did.>
+<Member> :: <Thing member did.>
+==============================================================
+
+2017-01-15
+--------------------------------------------------------------
+Kevin :: Began working on player.java, creating an array for the different locations
+<Member> :: <Thing member did.>
+<Member> :: <Thing member did.>
+==============================================================
+
+2017-01-16
+--------------------------------------------------------------
+Kevin :: continued to work on Player.java
+<Member> :: <Thing member did.>
+<Member> :: <Thing member did.>
+==============================================================
+
+2017-01-17
+--------------------------------------------------------------
+<Member> :: <Thing member did.>
+<Member> :: <Thing member did.>
+==============================================================
+
+2017-01-18
+--------------------------------------------------------------
+Kevin :: created classes for all Activity subclasses, without much substance with specifications
+<Member> :: <Thing member did.>
+<Member> :: <Thing member did.>
+==============================================================
+
+2017-01-19
+--------------------------------------------------------------
+Kevin :: Worked on debugging Player.java, and beginning Volleyball.java
+<Member> :: <Thing member did.>
+<Member> :: <Thing member did.>
+==============================================================
+
+2017-01-20
+--------------------------------------------------------------
+Kevin :: Continued writing Volleyball.java
+<Member> :: <Thing member did.>
+<Member> :: <Thing member did.>
+==============================================================
+
+2017-01-21
+--------------------------------------------------------------
+Kevin :: Fixed several merge conflicts, completed Volleyball.java
+<Member> :: <Thing member did.>
+<Member> :: <Thing member did.>
+==============================================================
+
+2017-01-22
+--------------------------------------------------------------
+Kevin :: altered Volleyball.java and debugged again, as well as wrote SpeechAndDebate.java
 <Member> :: <Thing member did.>
 <Member> :: <Thing member did.>
 ==============================================================

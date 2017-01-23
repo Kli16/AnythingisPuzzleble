@@ -19,7 +19,7 @@ public class Bathroom6 extends Activity{
     }
     public boolean Game() {
 	System.out.println("You find yourself in a pristine bathroom, not a scratch on it, Would you like to look around?(Yes or No)");
-	String look = Keyboard.ReadString();
+	String look = Keyboard.readString();
 	if (look.equals("Yes")) {
 		return true;
 	    }

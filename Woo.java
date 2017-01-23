@@ -19,7 +19,10 @@ public class Woo
 
     public static void main( String[] args )
     {
-	new Player
+	System.out.println("What is your name?");
+	String name = Keyboard.readString();
+	Player player1 = new Player(name);
+	player1.Play();
     }//end main
 
 }//end class Woo

@@ -1,7 +1,7 @@
 import cs1.Keyboard;
 import java.util.Arrays;
 
-public class Volleyball {
+public class Volleyball extends Activity {
 
 /* TEMPLATE FOR USER INPUT
 	ret = "The whistle just blew. The score is 10-11 . Get ready. What do you do?\n0 - Stand and Look around.\n1 - Sit down.\n2 - get ready and stare deeply at the server on the other side.\n3 - Cry?";

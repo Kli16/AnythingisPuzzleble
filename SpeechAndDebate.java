@@ -119,7 +119,4 @@ public class SpeechAndDebate extends Activity {
 	p.energy += 5;
     }
 
-    public static void main (String[] args){
-	Play();
-    }
 }

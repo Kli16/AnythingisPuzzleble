@@ -139,7 +139,4 @@ public class Volleyball extends Activity {
     
     }
 
-    public static void main (String[] args){
-	Play();
-    }
 }

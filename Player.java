@@ -22,7 +22,7 @@ public class Player{
     ArrayList<String> mapEight = new ArrayList<String>();
     public boolean[][] mapStatus = {{false},{false},{false},{false,false},{false,false,false,false},{false},{false},{false},{false,false}}; //Has the status of the location, meaning if you have gone there or not
     //public ArrayList<ArrayList<Activity>> location; //has the class of each location
-    public boolean[] escalator = {false,false,true,true,true,true,true,true,true}; //has the status of each escalator (working == true, not working == false)
+    public boolean[] escalator = {false,false,true,true,true,true,true,true,false}; //has the status of each escalator (working == true, not working == false)
     ArrayList<ArrayList<Activity>> location = new ArrayList<ArrayList<Activity>>();
     ArrayList<Activity> secondFloor = new ArrayList<Activity>();
     ArrayList<Activity> thirdFloor = new ArrayList<Activity>();
@@ -132,7 +132,7 @@ public class Player{
 	else if (difficulty == 2) {
 	    int brokenOne;
 	    for (int broken = 0; broken < 2; broken++) {
-		brokenOne = (int) (Math.random()*7+2);
+		brokenOne = (int) (Math.random()*6+2);
 		System.out.println(brokenOne);
 		escalator[brokenOne] = false;
 	    }
@@ -141,7 +141,7 @@ public class Player{
 	else {
 	    int brokenOne;
 	    for (int broken = 0; broken < 5; broken++) {
-		brokenOne = (int) (Math.random()*7+2);
+		brokenOne = (int) (Math.random()*6+2);
 		escalator[brokenOne] = false;
 	    }
 	    System.out.println("Hard");
@@ -149,7 +149,9 @@ public class Player{
 	while (floor >= 0) {
 	    playLevel();
 	}
-
+	
+	System.out.println("You've completed the game!");
+	System.out.println("Final score (the lower the better): "+(energy-kts*Math.log10(kts)));
     }
 
     public void playLevel() {
@@ -159,14 +161,15 @@ public class Player{
 	    numOptions = map.get(floor).size()-1;
 	    option = 0;
 	    while (option < numOptions) {
-		System.out.println(mapStatus[floor][option]);
 		if (!mapStatus[floor][option]) {
 		    System.out.println(option+": "+map.get(floor).get(option));
 		}
 		option++;
 	    }
 	    int stairs = option;
-	    System.out.println(option+": Take the stairs down one floor");
+	    if (floor > 0) {
+		System.out.println(option+": Take the stairs down one floor");
+	    }
 	    if (escalator[floor]) {
 		option++;
 		int escalator = option;
@@ -176,6 +179,9 @@ public class Player{
 	    if (input < numOptions) {
 		location.get(floor).get(input).Play(this);
 		mapStatus[floor][input] = true;
+		if (floor == 0) {
+		    floor--;
+		}
 	    }
 	    else if (input == stairs) {
 		floor--;

@@ -41,7 +41,7 @@ public class EngPuzzle extends Activity{
 	if (result == 2) {
 	    System.out.println("You're lucky we didn't quiz you on The Complete Works");
 	    p.energy += 5;
-	    kts += 1;
+	    p.kts += 1;
 	}
 	if(result == 3) {
 	    System.out.println("Honesty is the best policy!");

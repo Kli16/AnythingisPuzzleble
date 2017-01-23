@@ -1,10 +1,12 @@
 import cs1.Keyboard;
 import java.util.Arrays;
+import java.util.ArrayList;
+
 public class Player{
 
-    private int energy, GPA, floor;
-    private boolean[] keysToSuccess;
-    private String name;
+    public  int energy, GPA, floor, kts;
+    public  boolean[] keysToSuccess;
+    public  String name;
     public static String[][] map; //Has the name of each location that will be displayed to the player
     public static boolean[][] mapstatus; //Has the status of the location, meaning if you have gone there or not
     public static Activity[][] location; //has the class of each location
@@ -18,7 +20,6 @@ public class Player{
 	name = "";
 	map = new String[10][3];
 	mapstatus = new boolean[10][3];
-<<<<<<< HEAD
 	
 	Activity sUPuzzle = new SUPuzzle();
 	Activity battleship = new Battleship();
@@ -37,11 +38,42 @@ public class Player{
 	Activity chemLab = new ChemLab();
 	Activity drafting = new Drafting();
 	Activity artPuzzle = new ArtPuzzle();
-	location = {{},{sUPuzzle, battleship}, {volleyball}, {starWars}, {bathroom5, cafeteria}, {speechAndDebate, engPuzzle, library, pe}, {bathroom6, bio}, {bathroom7, physicsLab}, {chemLab}, {drafting, artPuzzle}};
-=======
-	location = new Activity[10][3];
-	location = [[], [SUPuzzle, Battleship], [Volleyball], [StarWars], [Bathroom5, Cafeteria,], [SpeechAndDebate, EngPuzzle, Library, PE], [Bathroom6, Bio], [Bathroom7, PhysicsLab], [ChemLab], [Drafting, ArtPuzzle]];
->>>>>>> 2856df1755a0aea7e412c3aaa701162c588356fa
+        ArrayList<ArrayList> location = new ArrayList<ArrayList>();
+	ArrayList<Activity> secondFloor = new ArrayList<Activity>();
+	secondFloor.add(sUPuzzle);
+	secondFloor.add(battleship);
+	ArrayList<Activity> thirdFloor = new ArrayList<Activity>();
+	thirdFloor.add(volleyball);
+	ArrayList<Activity> fourthFloor = new ArrayList<Activity>();
+	fourthFloor.add(starWars);
+	ArrayList<Activity> fifthFloor = new ArrayList<Activity>();
+        fifthFloor.add(bathroom5);
+	fifthFloor.add(starWars);
+	ArrayList<Activity> sixthFloor = new ArrayList<Activity>();
+	sixthFloor.add(speechAndDebate);
+	sixthFloor.add(engPuzzle);
+	sixthFloor.add(library);
+	sixthFloor.add(pe);
+	sixthFloor.add(bathroom6);
+	ArrayList<Activity> seventh = new ArrayList<Activity>();
+	seventh.add(bio);
+	seventh.add(bathroom7);
+	ArrayList<Activity> eighth = new ArrayList<Activity>();
+	eighth.add(physicsLab);
+	ArrayList<Activity> ninth = new ArrayList<Activity>();
+	ninth.add(chemLab);
+	ArrayList<Activity> tenth = new ArrayList<Activity>();
+	tenth.add(drafting);
+	tenth.add(artPuzzle);
+        location.add(secondFloor);
+	location.add(thirdFloor);
+	location.add(fourthFloor);
+	location.add(fifthFloor);
+	location.add(sixthFloor);
+	location.add(seventh);
+	location.add(eighth);
+	location.add(ninth);
+	location.add(tenth);
     }
     
     

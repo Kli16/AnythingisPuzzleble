@@ -1,6 +1,12 @@
 import cs1.Keyboard;
 public class ChemLab extends Activity{
 
+    int bucket1, bucket2;
+    String[] beakerDesc, beakerPHColor;
+    int[] beakerPH;
+    boolean[] beakers;
+    boolean litmusPaper;
+
     public ChemLab() {
 	int bucket1 = 0;
 	int bucket2 = 0;
@@ -16,17 +22,18 @@ public class ChemLab extends Activity{
 	if (win) {
 	    System.out.println("Good Job! You feel that good citizenship is its own reward.");
 	    System.out.println("KTS gained");
-	    p.KTS[1] = true;
-	    p.energy += 5;
+	    name.kts += 1;
+	    name.energy += 5;
 	}
 	else {
 	    System.out.println("The lab specialist bursts in through the door. Oh no, it looks like you might have to spend a lot of energy getting through this talking to.");
-	    p.energy += 10;
+	    name.energy += 10;
 	}
     }
 
     public boolean Game() {
-	int input1, input2;
+	int input1;
+	String input2;
 	int beakerNum = 0;
 	boolean look = true;
 	System.out.println("welcome to the chemistry lab! You see a note on the door asking for you to clean some beakers.");

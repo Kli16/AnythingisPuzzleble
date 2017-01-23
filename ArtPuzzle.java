@@ -1,7 +1,12 @@
 import cs1.Keyboard;
 
 public class ArtPuzzle extends Activity{
-    String[][] Grid, originalGrid;
+    String[][] originalGrid = {{"01","02","03"},
+			       {"04","05","06"},
+			       {"07","08","  "}};
+    String[][] Grid = {{"01","02","03"},
+		       {"04","05","06"},
+		       {"07","08","  "}};
     int totalMoves;
 
     public ArtPuzzle(){
@@ -122,21 +127,36 @@ public class ArtPuzzle extends Activity{
 	    System.out.println("");
 	}
     }
-    
+
+    public boolean gridEquals(String[][] grid1, String[][] grid2) {
+	for (int row = 0; row < grid1.length && row < grid2.length; row++) {
+	    for (int col = 0; col < grid1[0].length && col < grid2[0].length; col++) {
+		if (!(grid1[row][col].equals(grid2[row][col]))) {
+		    return false;
+		}
+	    }
+	}
+	return true;
+    }
+
+
     public void Play(Player name) {
-	printGrid();
+	System.out.println("You walk into the art studio, and see an unfinished puzzle on the desk. You decide to solve it.\n");
+	scramble();
 	System.out.println("Input a direction to slide a piece (up, down, left, right). To quit, enter \"quit\".");
 	String input;
-	while (!(Grid.equals(originalGrid))) {
+	while (!(gridEquals(Grid,originalGrid))) {
 	    printGrid();
 	    input = Keyboard.readString();
 	    if (input.toLowerCase().equals("quit")) {
+		System.out.println("You are unable to solve the puzzle. You walk away in shame.");
 		name.energy += 5;
 		return;
 	    }
 	    move(input);
 	    totalMoves += 1;
 	}
+	System.out.println("Good job! You solved the puzzle!");
 	name.kts += 1;
 	name.energy += 5;
     }

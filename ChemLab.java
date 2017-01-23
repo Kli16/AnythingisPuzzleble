@@ -1,11 +1,13 @@
 import cs1.Keyboard;
 public class ChemLab extends Activity{
 
-    int bucket1, bucket2;
-    String[] beakerDesc, beakerPHColor;
-    int[] beakerPH;
-    boolean[] beakers;
-    boolean litmusPaper;
+    int bucket1 = 0;
+    int bucket2 = 0;
+    String[] beakerDesc = {"is colorless and odorless", "is colorless and odorless", "smells like vinegar"};
+    String[] beakerPHColor = {"purple", "blue", "red"};
+    int[] beakerPH = {0,-1,1};
+    boolean[] beakers = {true, true, true};
+    boolean litmusPaper = false;
 
     public ChemLab() {
 	int bucket1 = 0;
@@ -40,7 +42,6 @@ public class ChemLab extends Activity{
 	while (beakers[2] != false) {
 	    System.out.println("\n\nOptions:");
 	    System.out.println("1: Pick up a beaker (" + (3-beakerNum) + " left)");
-	    System.out.println("1: Pick up a beaker");
 	    if (look) {
 		System.out.println("2: Look around");
 	    }

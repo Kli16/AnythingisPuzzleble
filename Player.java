@@ -133,7 +133,6 @@ public class Player{
 	    int brokenOne;
 	    for (int broken = 0; broken < 2; broken++) {
 		brokenOne = (int) (Math.random()*6+2);
-		System.out.println(brokenOne);
 		escalator[brokenOne] = false;
 	    }
 	    System.out.println("Normal");

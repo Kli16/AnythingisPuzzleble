@@ -52,14 +52,11 @@ Dima :: MVP of Battleship
 2017-01-13
 --------------------------------------------------------------
 Kevin :: worked on planning and organizing how all the puzzles could be called from one program
-<Member> :: <Thing member did.>
-<Member> :: <Thing member did.>
 ==============================================================
 
 2017-01-14
 --------------------------------------------------------------
 Dima :: Changed system to be more intuitive
-<Member> :: <Thing member did.>
 ==============================================================
 
 2017-01-15

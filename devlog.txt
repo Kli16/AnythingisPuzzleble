@@ -85,33 +85,32 @@ Eric :: Started Art Puzzle
 --------------------------------------------------------------
 Kevin :: created classes for all Activity subclasses, without much substance with specifications
 Dima :: Fixed small mistakes in that trailed on from changing the system
-<Member> :: <Thing member did.>
+Eric :: Updated ArtPuzzle
 ==============================================================
 
 2017-01-19
 --------------------------------------------------------------
 Kevin :: Worked on debugging Player.java, and beginning Volleyball.java
 Dima :: Made library puzzle and finished english puzzle
-<Member> :: <Thing member did.>
+Eric :: Updated Devlog
 ==============================================================
 
 2017-01-20
 --------------------------------------------------------------
 Kevin :: Continued writing Volleyball.java
 Dima :: Began to work on the Bathroom Puzzles
-<Member> :: <Thing member did.>
+Eric :: Essentially finished ArtPuzzle, missing some pieces
 ==============================================================
 
 2017-01-21
 --------------------------------------------------------------
 Kevin :: Fixed several merge conflicts, completed Volleyball.java
 Dima :: Finished Bathroom Puzzles, Started to work on Library Puzzle
-<Member> :: <Thing member did.>
 ==============================================================
 
 2017-01-22
 --------------------------------------------------------------
 Kevin :: altered Volleyball.java and debugged again, as well as wrote SpeechAndDebate.java
 Dima :: Finished Library Puzzle, Began and Finished Cafeteria and commited everything, also fixed a bunch of errors from before
-Eric :: Finished ArtPuzzle, Finished ChemLab, Updated other puzzles to current specifications, Fixed Player.java, Finished StarWars
+Eric :: Finished ArtPuzzle, Finished ChemLab, Finished StarWars, Updated other puzzles to current specifications, Made Player.java, Finished StarWars, Made UML
 ==============================================================

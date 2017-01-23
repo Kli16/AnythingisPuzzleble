@@ -71,13 +71,14 @@ public class ChemLab extends Activity{
 		System.out.println("Invalid input");
 	    }
 	}
-
+	return true;
     }
 
     //beakerAction returns the success of the beaker action
-    public boolean beakerAction (int beakerNumber, boolean paper) {
+    public boolean beakerAction (int beakerNumber) {
 	int input;
 	boolean done = false;
+	boolean paper = litmusPaper || false;
 	while (!done) {
 	    System.out.println("What do you do with this beaker?");
 	    System.out.println("1: Pour it into the sink");
@@ -115,6 +116,7 @@ public class ChemLab extends Activity{
 		System.out.println("Invalid input");
 	    }
 	}
+	return true;
     }
 
 

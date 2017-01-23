@@ -1,6 +1,6 @@
 import cs1.Keyboard;
 
-public class EngPuzzle {
+public class EngPuzzle extends Activity{
     int energy;
     public static int puzzle() {
 	System.out.println("I see you decided to show up to class, you did the assigned reading, right?");
@@ -32,19 +32,20 @@ public class EngPuzzle {
 	    //add 5 energy used to the player
 	}
     }
-    public int Play(Player p) {
+    public void Play(Player p) {
 	int result = puzzle();
 	if (result == 1) {
 	    System.out.println("You couldn't even bluff?");
-	    return 10;
+	    p.energy += 10;
 	}
 	if (result == 2) {
 	    System.out.println("You're lucky we didn't quiz you on The Complete Works");
-	    return 5;
+	    p.energy += 5;
+	    kts += 1;
 	}
 	if(result == 3) {
 	    System.out.println("Honesty is the best policy!");
-	    return 5;
+	    p.energy += 5;
 	}
     }
 }

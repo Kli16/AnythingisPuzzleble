@@ -1,7 +1,7 @@
 import cs1.Keyboard;
 import java.util.Arrays;
 
-public class Battleship {
+public class Battleship extends Activity{
     static boolean[][] enemymap = new boolean[10][10];
     static boolean[][] hitmap = new boolean[10][10];
     static boolean[][] map = new boolean[10][10];
@@ -179,7 +179,7 @@ public class Battleship {
 	//later make it figure out who won and print a statement
     }
 
-    public void Play() {
+    public void Play(Player p) {
 	//System.out.println(Arrays.deepToString(map));
 	//System.out.println(Arrays.deepToString(enemymap));
 	Startup();

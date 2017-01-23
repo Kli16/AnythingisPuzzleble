@@ -11,23 +11,24 @@ Trapped Instuyde
 ------------------------------------------
 OBSTACLES OVERCOME
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
-wow we so BOSS bc...
+We ended up finishing the project which considering the time restraints that all of us had throughtout the project was difficult to achieve. 
+Till now none of us have ever written a project with so many files in it
 
 UNRESOLVED ISSUES
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
-
+Would have wanted to make Battleship more and made the AI smarter
 COOL STUFF LEARNED
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 wow! oo!...
 
 MID-DEVELOPMENT DESIGN CHANGES
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
-we changed ___ to ___ bc...
+We lowered the amount of puzzles in the game so that we could make sure that we had time to write all of them with a decent amount of creativity and plot entanglement
+Changed the function of Keys to Success, mainly due to time restraint
 
 LESSONS LEARNED
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
-tales of wisdom gained...
-||||||||||||||||||||||||||||||||||||||||||
+Quality and Polish and Robustness should always go above quantity, especially under a tight time limit
 
 
 
@@ -39,40 +40,6 @@ tales of wisdom gained...
    \:\/.:| |\:\____/\\ ..::/ / \:\/___/\\:\_\ \ \\:\_\ \ \ 
     \____/_/ \_____\/ \___/_(   \_____\/ \_____\/ \_____\/ 
 ==============================================================
-2017-01-22
---------------------------------------------------------------
-Kevin :: 
-Eric :: Finished ArtPuzzle, Finished ChemLab, Updated other puzzles to current specifications, Fixed Player.java, Finished StarWars
-<Member> :: <Thing member did.>
-==============================================================
-
-2017-01-18
---------------------------------------------------------------
-Kevin :: New locations added, battleship updated
-Eric ::  :: <Thing member did.>
-<Member> :: <Thing member did.>
-==============================================================
-
-
-2017-01-17
---------------------------------------------------------------
-Dima :: Battleship made playable
-Kevin :: Launch instructions added, updated todo
-Eric :: Started Art Puzzle
-==============================================================
-
-2017-01-16
---------------------------------------------------------------
-Dima :: Removed Location.java, system made more concise, made Battleship 
-        output screen better.
-==============================================================
-
-2017-01-15
---------------------------------------------------------------
-Eric :: Updated Battleship.java for user input
-Dima :: Created puzzle for English
-==============================================================
-
 2017-01-12
 --------------------------------------------------------------
 Eric :: Made Location.java, Worked on Player.java
@@ -89,61 +56,62 @@ Kevin :: worked on planning and organizing how all the puzzles could be called f
 
 2017-01-14
 --------------------------------------------------------------
-<Member> :: <Thing member did.>
+Dima :: Changed system to be more intuitive
 <Member> :: <Thing member did.>
 ==============================================================
 
 2017-01-15
 --------------------------------------------------------------
 Kevin :: Began working on player.java, creating an array for the different locations
-<Member> :: <Thing member did.>
-<Member> :: <Thing member did.>
+Eric :: Updated Battleship.java for user input
+Dima :: Created puzzle for English
 ==============================================================
 
 2017-01-16
 --------------------------------------------------------------
 Kevin :: continued to work on Player.java
-<Member> :: <Thing member did.>
-<Member> :: <Thing member did.>
+Dima :: Removed Location.java, system made more concise, made Battleship 
+        output screen better.
 ==============================================================
 
 2017-01-17
 --------------------------------------------------------------
-<Member> :: <Thing member did.>
-<Member> :: <Thing member did.>
+Dima :: Battleship made playable
+Kevin :: Launch instructions added, updated todo
+Eric :: Started Art Puzzle
 ==============================================================
 
 2017-01-18
 --------------------------------------------------------------
 Kevin :: created classes for all Activity subclasses, without much substance with specifications
-<Member> :: <Thing member did.>
+Dima :: Fixed small mistakes in that trailed on from changing the system
 <Member> :: <Thing member did.>
 ==============================================================
 
 2017-01-19
 --------------------------------------------------------------
 Kevin :: Worked on debugging Player.java, and beginning Volleyball.java
-<Member> :: <Thing member did.>
+Dima :: Made library puzzle and finished english puzzle
 <Member> :: <Thing member did.>
 ==============================================================
 
 2017-01-20
 --------------------------------------------------------------
 Kevin :: Continued writing Volleyball.java
-<Member> :: <Thing member did.>
+Dima :: Began to work on the Bathroom Puzzles
 <Member> :: <Thing member did.>
 ==============================================================
 
 2017-01-21
 --------------------------------------------------------------
 Kevin :: Fixed several merge conflicts, completed Volleyball.java
-<Member> :: <Thing member did.>
+Dima :: Finished Bathroom Puzzles, Started to work on Library Puzzle
 <Member> :: <Thing member did.>
 ==============================================================
 
 2017-01-22
 --------------------------------------------------------------
 Kevin :: altered Volleyball.java and debugged again, as well as wrote SpeechAndDebate.java
-<Member> :: <Thing member did.>
-<Member> :: <Thing member did.>
+Dima :: Finished Library Puzzle, Began and Finished Cafeteria and commited everything, also fixed a bunch of errors from before
+Eric :: Finished ArtPuzzle, Finished ChemLab, Updated other puzzles to current specifications, Fixed Player.java, Finished StarWars
 ==============================================================

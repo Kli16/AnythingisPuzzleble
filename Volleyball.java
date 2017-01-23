@@ -27,9 +27,9 @@ public class Volleyball extends Activity {
 	    System.out.println("Crying is the best way to release your emotions. You just got 10 straight points. The score is now" + points + "-" + opppts + ".");
 	}
 */
-    public static int points = 10;
-    public static int opppts = 11;
-    public static void Play(Player p){
+    public int points = 10;
+    public int opppts = 11;
+    public void Play(Player p){
 	String ret = "";
 	ret = "Uh oh. You've walked into the Gym. Mr. Choubaralian gives you a questioning look. 'What are you doing here?' he asks.";
 	System.out.println(ret);

@@ -34,7 +34,6 @@ public class Player{
 	Activity bathroom6 = new Bathroom6();
 	Activity bio = new Bio();
 	Activity bathroom7 = new Bathroom7();
-	Activity physicsLab = new PhysicsLab();
 	Activity chemLab = new ChemLab();
 	Activity drafting = new Drafting();
 	Activity artPuzzle = new ArtPuzzle();
@@ -59,7 +58,6 @@ public class Player{
 	seventh.add(bio);
 	seventh.add(bathroom7);
 	ArrayList<Activity> eighth = new ArrayList<Activity>();
-	eighth.add(physicsLab);
 	ArrayList<Activity> ninth = new ArrayList<Activity>();
 	ninth.add(chemLab);
 	ArrayList<Activity> tenth = new ArrayList<Activity>();
